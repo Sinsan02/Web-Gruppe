@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(79, 6, 128);
+}
+
+.Menu {
+      list-style-type: none;
+      margin:  0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #3c087b;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      z-index: 1; /* Sørger for at menyen er over andre elementer */
+    }
+
+    .Menu li {
+      float: left;
+    }
+
+    .Menu li a {
+      display: block;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      margin: 0;
+    }
+
+    .Menu li a:hover {
+      background-color: #7d1ea8;
+      transition: background-color 0.5s ease;
+      border-radius: 8px;
+      transform: scale(1.1);
+      opacity: 0.75;
+      
+    }
+
+    .Navigator {
+      margin-top: 50px; /* Juster denne verdien basert på høyden på menyen */
+      text-align: center;
+    }
+
+    .Home, .ProduktSide, .HandleKurv {
+      cursor: pointer;
+    }
