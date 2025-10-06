@@ -1,0 +1,311 @@
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+    background: linear-gradient(165deg, #0c4493 0%, #045234 100%);
+    margin: 0;
+    padding: 0;
+    background-size: 100% 240%;
+    
+}
+
+/* Nav Bar css begynnelse */
+.Menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(165deg, #1a47b8 0%, #086e31 100%);
+    position: fixed;
+    top: 0;
+    left: 0; 
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+    display: flex;;
+    z-index: 1;
+}
+
+.Menu li {
+    float: left;
+    margin-left: 0;
+    padding-top: 7px;
+    font-size: 30px;
+}
+
+.Menu li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 0;
+}
+
+.Menu li a:hover {
+    background-color: #1e74c9;
+    transition: background-color 0.5s ease;
+    border-radius: 8px;
+    transform: scale(1.1);
+    opacity: 0.75;
+}
+
+.Navigator {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.Home, .ProduktSide, .HandleKurv {
+    cursor: pointer;
+}
+
+.menu-separator {
+    margin: 0;
+    border: none;
+    border-top: 2px solid #18ace6;
+    position: fixed;
+    top: 10%; 
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+
+
+.Titel {
+    text-align: center;
+    color: white;
+    margin-top: 100px; 
+}
+
+.Logo {
+    display: block;
+    margin: 20px auto 0 auto; 
+    max-width: 150px; 
+    position: fixed;
+    top: -50px; 
+    left: 10px;
+    z-index: 2;
+}
+/* Nav Bar css slutt */
+/* Slider css begynnelse */
+
+* {box-sizing:border-box}
+
+
+.SliderShow-Container {
+  max-width: 10000px;
+  position: relative;
+  margin: auto;
+  height: 400px;
+}
+
+.mySlides {
+  display: none;
+
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #0a0539;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.linje-top-bilde{
+    margin: 0;
+    border: none;
+    border-top: 2px solid #dddddd;
+    position: relative;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    margin-top: 20px;
+}
+
+.linje-bunn-bilde{
+    margin: 0;
+    border: none;
+    border-top: 2px solid #dddddd;
+    position: relative;
+    top: -25px; 
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    margin-top: 20px;
+}
+
+.dot-container {
+    position: relative;
+    left: 50%;
+    bottom: 12%;
+    transform: translateX(-50%);
+    text-align: center;
+    background: none;
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+    width: auto;
+}
+/* Slider css slutt */
+/*Start på Deals*/
+.deals-row {
+    display: flex;
+    width: 100%;
+    margin-top: 180px;
+    padding: 0;
+    gap: 12px; /* Juster størrelsen på skillet her */
+}
+
+.deal-bilde-1, .deal-bilde-2, .deal-bilde-3 {
+    width: 33.33%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+/*Slutt på Deals*/
+/* Bunn css begynnelse */
+.linje-bunn {
+  margin: 0;
+  border: none;
+  border-top: 2px solid #dddddd;
+  position: relative;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  margin-top: 400px;
+}
+
+.bunn {
+  background-color: rgb(2, 2, 45);
+  height: 400px;
+}
+
+.bunn-lenker {
+  color: white;
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  gap: 200px;
+  padding: 0;
+}
+
+.bunn-lenker li {
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.bunn-lenker li::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 250%;      
+  max-width: 200px; 
+  height: 1px;
+  background: #0b1495;
+}
+
+.bunn-lenker-text-om {
+  color: white;
+  font-size: 15px;
+  display: flex;
+  margin-left: 11%;
+  margin-top: -3%
+}
+
+.bunn-lenker-text-kontakt {
+  color: white;
+  font-size: 15px;
+  display: flex;
+  margin-left: 31%;
+  margin-top: -7%;
+}
+
+.bunn-lenker-text-support {
+  color: white;
+  font-size: 15px;
+  display: flex;
+   margin-left: 55%;
+  margin-top: -7%;
+}
+
+.bunn-lenker-text-Informasjon {
+  color: white;
+  font-size: 15px;
+  display: flex;
+   margin-left: 76%;
+  margin-top: -7%;
+}
+
+.bunn-lenker-om a, .bunn-lenker-kontakt a, .bunn-lenker-support a, .bunn-lenker-informasjon a {
+  color: white;
+  text-decoration: none;
+}
+
+
