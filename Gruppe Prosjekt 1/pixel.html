@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Pixel 10 Pro</title>
+    <link rel="stylesheet" href="prosjektstylesheet.css">
+</head>
+<body>
+    <header class="header-med-logo">
+    <img src="bilder/logotele.png" alt="Firma-logo" class="logo">
+    <h1>Google Pixel</h1>
+
+</header>
+
+<main class="produkt-mappe">
+    <div class="bildevisning">
+        <div class="hovedbilde">
+            <img id="aktiv-bilde" src="Bilder/pixel10pro.jpg" alt="Google Pixel 10 Pro">
+        </div>
+        <div class="thumbnails">
+            <img src="Bilder/pixel10probak.jpg" alt="Front" onclick="byttBilde(this)">
+            <img src="Bilder/pixel10proskrå.jpg" alt="Bak" onclick="byttBilde(this)">
+            <img src="bilder/Pixelinfo.jpg" alt="Side" onclick="byttBilde(this)">
+        </div>
+    </div>
+    <div class="produkt-detaljer">
+        <h2 class="produkt-navn">Google Pixel 10 Pro </h2>
+    <p class="pris">Pris: <strong> kr 10 995,- </strong>
+    <p class="stock">På lager: - levering innen 5-7 virkedager </p>
+    <h3>Farger</h3>
+    <div class="fargevalg"> 
+        <span class="farge" style="background-color: #1c1c1c;" title="Obsidian"></span>
+        <span class="farge" style="background-color: #c0c0c0;" title="Moonstone"></span>
+        <span class="farge" style="background-color: #e2e3a8;" title="Obsidian"></span>
+    </div>
+
+<h3>Lagring</h3>
+<select class="select">
+    <option> 128 GB</option>
+    <option> 256 GB</option>
+    <option> 512 GB</option>
+</select>
+
+
+<h3>Spesifikasjoner</h3>
+<ul>
+    <li>6.7 QOLED 120 Hz skjerm</li>
+    <li>12GB RAM</li>
+    <li>Snapdragon 8 Gen 3</li>
+    <li>Triple kamera 50 MP</li>
+    <li>Android 15</li>
+    <li>4000 mAh batteri</li>
+</ul>
+
+<button class="buy-button"> Legg i handlekurv</button>
+</div>
+
+<section class="produkt-info">
+    <h3>Om produktet</h3>
+    <p>Google Pixel 10 Pro er designet for ytelse og presisjon. Med AI drevet kamera, lang batteritid og Android 15 får du en fantastisk opplevelse.</p>
+
+    <h3>Fordeler</h3>
+    <ul>
+        <li>Fantastisk kamera med utallige mange AI funksjoner</li>
+        <li>Batteri som varer hele dagen</li>
+        <li>Lynrask ytelse med Snapdragon 8 Gen 3</li>
+        <li>Vann og støvbestandig som tilsvarer IP68</li>
+    </ul>
+</section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Mobilbutikk</p>
+</footer>
+
+<script>
+    function byttBilde(element) {
+        const hovedbilde = document.getElementById("aktiv-bilde");
+        hovedbilde.src = element.src;
+        hovedbilde.alt = element.alt;
+    }
+    </script>
+</body>
+</html>
