@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Pixel 10 Pro</title>
+    <link rel="stylesheet" href="prosjektiphone.css">
+</head>
+<body>
+    <header class="header-med-logo">
+    <img src="bilder/logotele.png" alt="Firma-logo" class="logo">
+    <h1>iPhone 17 Pro Max</h1>
+
+</header>
+
+<main class="produkt-mappe">
+    <div class="bildevisning">
+        <div class="hovedbilde">
+            <img id="aktiv-bilde" src="bilder/iphonefront.jpg" alt="iPhone 17 Pro Max">
+        </div>
+        <div class="thumbnails">
+            <img src="bilder/iphoneinfo.jpg" alt="Front" onclick="byttBilde(this)">
+            <img src="bilder/iphoneallefarger.jpg" alt="Bak" onclick="byttBilde(this)">
+            <img src="bilder/iphoneboks.jpg" alt="Side" onclick="byttBilde(this)">
+        </div>
+    </div>
+    <div class="produkt-detaljer">
+        <h2 class="produkt-navn">iPhone 17 Pro Max</h2>
+    <p class="pris">Pris: <strong> kr 17 990,- </strong>
+    <p class="stock">På lager: - levering innen 5-7 virkedager </p>
+    <h3>Farger</h3>
+    <div class="fargevalg"> 
+        <span class="farge" style="background-color: #afafaf;" title="Silver"></span>
+        <span class="farge" style="background-color: #1d2939;" title="Deep Blue"></span>
+        <span class="farge" style="background-color: #ff7700;" title="Cosmic Orange"></span>
+    </div>
+
+<h3>Lagring</h3>
+<select class="select">
+    <option> 256 GB</option>
+    <option> 512 GB</option>
+    <option> 1 TB</option>
+</select>
+
+
+<h3>Spesifikasjoner</h3>
+<ul>
+    <li>6.9 Retina skjerm</li>
+    <li>Kraftig A19 Pro Bionic CPU med 5G</li>
+    <li>48+48+48 MP trippelkamera</li>
+</ul>
+
+<button class="buy-button"> Legg i handlekurv</button>
+</div>
+
+<section class="produkt-info">
+    <h3>Om produktet</h3>
+    <p>iPhone 17 Pro Max smarttelefon imponerer Apple Intelligence med trippelkamera i proffklasse og en utrolig sterk A19 Chip. Stort batteri og et ekstremt slitesterk kabinett som garanterer langvarig opplevelse</p>
+
+    <h3>Fordeler</h3>
+    <ul>
+        <li>A19 Pro-chip som har dampkammerkjøling og er lynende rask</li>
+        <li>Batteri som varer hele dagen</li>
+        <li>Utviklet for Apple intelligence</li>
+        <li>eSIM som gir bedre fleksibilitet, forbedret brukervennlighet, økt sikkerhet og sømløs tilkobling</li>
+    </ul>
+</section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Mobilbutikk</p>
+</footer>
+
+<script>
+    function byttBilde(element) {
+        const hovedbilde = document.getElementById("aktiv-bilde");
+        hovedbilde.src = element.src;
+        hovedbilde.alt = element.alt;
+    }
+    </script>
+</body>
+</html>
