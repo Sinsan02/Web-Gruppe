@@ -849,4 +849,31 @@ footer {
 
 footer {
     z-index: 4;
+
+    
+    /*Handlekurv*/
+
+}
+
+.Navigator{
+    margin-top: 120px;
+    text-align: center;
+}
+.btn-primary {
+  display: block;        
+  margin: 24px auto 0;     
+  width: max-content;      
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  background: #7d1ea8;
+  color: #fff;
+  transition: transform .15s ease, background-color .2s ease, opacity .15s ease;
+}
+
+.btn-primary:hover {
+  background: #9a35c5;
+  transform: translateY(-1px);
+  opacity: .95;
 }
