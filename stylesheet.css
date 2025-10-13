@@ -377,8 +377,8 @@ header h1 {
 /*Sindre slutt */
 
 /*Kriss start */
-/* Telefon grid */
-.telefon-grid {
+/*  grid */
+.-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
@@ -386,7 +386,7 @@ header h1 {
 }
 
 /* tlf cards oversikt */
-.telefon-card {
+.-card {
     background: white;
     border-radius: 16px;
     padding: 1.5rem;
@@ -407,7 +407,6 @@ header h1 {
     object-fit: contain;
     border-radius: 12px;
     margin-bottom: 1rem;
-    background: #f5f5f5;
 }
 
 .telefon-merke {
@@ -879,4 +878,5 @@ footer {
   transform: translateY(-1px);
   opacity: .95;
 }
+
 
