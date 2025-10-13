@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Pixel 10 Pro</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div>
+        <ul class="Menu">
+            <img src="Bilder/logo.png" alt="Tele Spesialisten Logo" class="menu-logo">
+            <li><a class="Home" href="index.html">Forside</a></li>
+            <li><a class="ProduktSide" href="ProduktSide.html">Produkter</a></li>
+            <li><a class="HandleKurv" href="HandleKurv.html">Handlekurv</a></li>
+        </ul>
+        <hr class="menu-separator">
+    </div>
+<main class="produkt-mappe">
+    <div class="bildevisning">
+        <div class="hovedbilde">
+            <img id="aktiv-bilde" src="bilder/iphonefront.jpg" alt="iPhone 17 Pro Max">
+        </div>
+        <div class="thumbnails">
+            <img src="Bilder/iphoneinfo.jpg" alt="Front" onclick="byttBilde(this)">
+            <img src="Bilder/iphoneallefarger.jpg" alt="Bak" onclick="byttBilde(this)">
+            <img src="Bilder/iphoneboks.jpg" alt="Side" onclick="byttBilde(this)">
+        </div>
+    </div>
+    <div class="produkt-detaljer">
+        <h2 class="produkt-navn">iPhone 17 Pro Max</h2>
+    <p class="pris">Pris: <strong> kr 17 990,- </strong>
+    <p class="stock">På lager: - levering innen 5-7 virkedager </p>
+    <h3>Farger</h3>
+    <div class="fargevalg"> 
+        <span class="farge" style="background-color: #afafaf;" title="Silver"></span>
+        <span class="farge" style="background-color: #1d2939;" title="Deep Blue"></span>
+        <span class="farge" style="background-color: #ff7700;" title="Cosmic Orange"></span>
+    </div>
+
+<h3>Lagring</h3>
+<select class="select">
+    <option> 256 GB</option>
+    <option> 512 GB</option>
+    <option> 1 TB</option>
+</select>
+
+
+<h3>Spesifikasjoner</h3>
+<ul>
+    <li>6.9 Retina skjerm</li>
+    <li>Kraftig A19 Pro Bionic CPU med 5G</li>
+    <li>48+48+48 MP trippelkamera</li>
+</ul>
+
+<button class="buy-button"> Legg i handlekurv</button>
+</div>
+
+<section class="produkt-info">
+    <h3>Om produktet</h3>
+    <p>iPhone 17 Pro Max smarttelefon imponerer Apple Intelligence med trippelkamera i proffklasse og en utrolig sterk A19 Chip. Stort batteri og et ekstremt slitesterk kabinett som garanterer langvarig opplevelse</p>
+
+    <h3>Fordeler</h3>
+    <ul>
+        <li>A19 Pro-chip som har dampkammerkjøling og er lynende rask</li>
+        <li>Batteri som varer hele dagen</li>
+        <li>Utviklet for Apple intelligence</li>
+        <li>eSIM som gir bedre fleksibilitet, forbedret brukervennlighet, økt sikkerhet og sømløs tilkobling</li>
+    </ul>
+</section>
+</main>
+
+<!--Start på bunn-->
+<hr class="linje-bunn">
+<div class="bunn">
+
+<div class="footer-content">
+  <div class="footer-column">
+    <h3>Om oss</h3>
+    <div class="bunn-lenker-text-om">
+      <ul class="bunn-lenker-om">
+        <li><a href="DuTrudeDetJa.html">Om oss</a></li>
+        <li><a href="DuTrudeDetJa.html">Vår historie</a></li>
+        <li><a href="DuTrudeDetJa.html">Vårt team</a></li>
+        <li><a href="DuTrudeDetJa.html">Karriere</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-column">
+    <h3>Kontakt oss</h3>
+    <div class="bunn-lenker-text-kontakt">
+      <ul class="bunn-lenker-kontakt">
+        <li><a href="DuTrudeDetJa.html">Kontakt oss</a></li>
+        <li><a href="DuTrudeDetJa.html">E-post</a></li>
+        <li><a href="DuTrudeDetJa.html">Telefon</a></li>
+        <li><a href="DuTrudeDetJa.html">Adresse</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-column">
+    <h3>Support</h3>
+    <div class="bunn-lenker-text-support">
+      <ul class="bunn-lenker-support">
+        <li><a href="DuTrudeDetJa.html">Support 24/7</a></li>
+        <li><a href="DuTrudeDetJa.html">FAQ</a></li>
+        <li><a href="DuTrudeDetJa.html">Garantier</a></li>
+        <li><a href="DuTrudeDetJa.html">Reparasjoner</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-column">
+    <h3>Informasjon</h3>
+    <div class="bunn-lenker-text-Informasjon">
+      <ul class="bunn-lenker-informasjon">
+        <li><a href="DuTrudeDetJa.html">Produktinfo</a></li>
+        <li><a href="DuTrudeDetJa.html">Priser</a></li>
+        <li><a href="DuTrudeDetJa.html">Tilbud</a></li>
+        <li><a href="DuTrudeDetJa.html">Nyheter</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!--Slutt på bunn-->
+
+<footer>© 2025 Tele Spesialisten. Alle rettigheter reservert.</footer>
+
+<script>
+    function byttBilde(element) {
+        const hovedbilde = document.getElementById("aktiv-bilde");
+        hovedbilde.src = element.src;
+        hovedbilde.alt = element.alt;
+    }
+    </script>
+</body>
+</html>
