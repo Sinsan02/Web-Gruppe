@@ -43,7 +43,9 @@ body {
     transform: translateY(-2px);
 }
 
-.Menu li a.ProduktSide {
+body.home-page .Menu li a.Home,
+body.produktside-page .Menu li a.ProduktSide,
+body.handlekurv-page .Menu li a.HandleKurv {
     background: #667eea;
     color: white;
 }
@@ -877,3 +879,4 @@ footer {
   transform: translateY(-1px);
   opacity: .95;
 }
+
