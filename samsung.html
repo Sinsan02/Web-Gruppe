@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samsung S25 Ultra</title>
-    <link rel="stylesheet" href="prosjektsamsung.css">
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <header class="header-med-logo">
-    <img src="bilder/Logo.png" alt="Firma-logo" class="logo">
-    <h1>Samsung S25 Ultra</h1>
-
-</header>
+    <div>
+        <ul class="Menu">
+            <img src="Bilder/Logo.png" alt="Tele Spesialisten Logo" class="menu-logo">
+            <li><a class="Home" href="index.html">Forside</a></li>
+            <li><a class="ProduktSide" href="ProduktSide.html">Produkter</a></li>
+            <li><a class="HandleKurv" href="HandleKurv.html">Handlekurv</a></li>
+        </ul>
+        <hr class="menu-separator">
+    </div>
 
 <main class="produkt-mappe">
     <div class="bildevisning">
@@ -19,9 +23,9 @@
             <img id="aktiv-bilde" src="bilder/iphonefront.jpg" alt="iPhone 17 Pro Max">
         </div>
         <div class="thumbnails">
-            <img src="bilder/samsungforan.png" alt="Front" onclick="byttBilde(this)">
-            <img src="bilder/samsungskrå.png" alt="Bak" onclick="byttBilde(this)">
-            <img src="bilder/samsungalle.png" alt="Side" onclick="byttBilde(this)">
+            <img src="Bilder/samsungforan.png" alt="Front" onclick="byttBilde(this)">
+            <img src="Bilder/samsungskrå.png" alt="Bak" onclick="byttBilde(this)">
+            <img src="Bilder/samsungalle.png" alt="Side" onclick="byttBilde(this)">
         </div>
     </div>
     <div class="produkt-detaljer">
@@ -67,9 +71,64 @@
 </section>
 </main>
 
-<footer>
-    <p>&copy; 2025 Mobilbutikk</p>
-</footer>
+<hr class="linje-bunn">
+<div class="bunn">
+
+<div class="footer-content">
+  <div class="footer-column">
+    <h3>Om oss</h3>
+    <div class="bunn-lenker-text-om">
+      <ul class="bunn-lenker-om">
+        <li><a href="DuTrudeDetJa.html">Om oss</a></li>
+        <li><a href="DuTrudeDetJa.html">Vår historie</a></li>
+        <li><a href="DuTrudeDetJa.html">Vårt team</a></li>
+        <li><a href="DuTrudeDetJa.html">Karriere</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-column">
+    <h3>Kontakt oss</h3>
+    <div class="bunn-lenker-text-kontakt">
+      <ul class="bunn-lenker-kontakt">
+        <li><a href="DuTrudeDetJa.html">Kontakt oss</a></li>
+        <li><a href="DuTrudeDetJa.html">E-post</a></li>
+        <li><a href="DuTrudeDetJa.html">Telefon</a></li>
+        <li><a href="DuTrudeDetJa.html">Adresse</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-column">
+    <h3>Support</h3>
+    <div class="bunn-lenker-text-support">
+      <ul class="bunn-lenker-support">
+        <li><a href="DuTrudeDetJa.html">Support 24/7</a></li>
+        <li><a href="DuTrudeDetJa.html">FAQ</a></li>
+        <li><a href="DuTrudeDetJa.html">Garantier</a></li>
+        <li><a href="DuTrudeDetJa.html">Reparasjoner</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-column">
+    <h3>Informasjon</h3>
+    <div class="bunn-lenker-text-Informasjon">
+      <ul class="bunn-lenker-informasjon">
+        <li><a href="DuTrudeDetJa.html">Produktinfo</a></li>
+        <li><a href="DuTrudeDetJa.html">Priser</a></li>
+        <li><a href="DuTrudeDetJa.html">Tilbud</a></li>
+        <li><a href="DuTrudeDetJa.html">Nyheter</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+/<footer>© 2025 Tele Spesialisten. Alle rettigheter reservert.</footer>
+
 
 <script>
     function byttBilde(element) {
@@ -78,5 +137,7 @@
         hovedbilde.alt = element.alt;
     }
     </script>
+
+    <script src="handlekurv.js"></script>
 </body>
 </html>
