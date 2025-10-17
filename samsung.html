@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsung S25 Ultra</title>
+    <link rel="stylesheet" href="prosjektsamsung.css">
+</head>
+<body>
+    <header class="header-med-logo">
+    <img src="bilder/Logo.png" alt="Firma-logo" class="logo">
+    <h1>Samsung S25 Ultra</h1>
+
+</header>
+
+<main class="produkt-mappe">
+    <div class="bildevisning">
+        <div class="hovedbilde">
+            <img id="aktiv-bilde" src="bilder/iphonefront.jpg" alt="iPhone 17 Pro Max">
+        </div>
+        <div class="thumbnails">
+            <img src="bilder/samsungforan.png" alt="Front" onclick="byttBilde(this)">
+            <img src="bilder/samsungskrå.png" alt="Bak" onclick="byttBilde(this)">
+            <img src="bilder/samsungalle.png" alt="Side" onclick="byttBilde(this)">
+        </div>
+    </div>
+    <div class="produkt-detaljer">
+        <h2 class="produkt-navn">Samsung S25 Ultra</h2>
+    <p class="pris">Pris: <strong> kr 17 990,- </strong>
+    <p class="stock">På lager: - levering innen 5-7 virkedager </p>
+    <h3>Farger</h3>
+    <div class="fargevalg"> 
+        <span class="farge" style="background-color: #afafaf;" title="Titanium Silver"></span>
+        <span class="farge" style="background-color: #1d2939;" title="Titanium Blue"></span>
+        <span class="farge" style="background-color: #000000;" title="Titanium Black"></span>
+    </div>
+
+<h3>Lagring</h3>
+<select class="select">
+    <option> 256 GB</option>
+    <option> 512 GB</option>
+    <option> 1 TB</option>
+</select>
+
+
+<h3>Spesifikasjoner</h3>
+<ul>
+    <li>6.9 Dynamic AMOLED skjerm</li>
+    <li>Snapdragon 8 Elite-prosessor</li>
+    <li>200+50+50+10 MP kameraoppsett</li>
+</ul>
+
+<button class="buy-button"> Legg i handlekurv</button>
+</div>
+
+<section class="produkt-info">
+    <h3>Om produktet</h3>
+    <p>Samsung Galaxy S25 Ultra 5G smarttelefon er full av toppmoderne teknologi og AI funksjoner, og vil gi din mobilopplevelse et løft. Denne telefonen er utivklet slik at din hverdag blir enklere ved bruk av vår nyeste teknologi!</p>
+
+    <h3>Fordeler</h3>
+    <ul>
+        <li>Firedobbelt bakkamera</li>
+        <li>Batteri som varer hele dagen</li>
+        <li>120 hz unik skjerm som er topp responsiv og kan brukes til både hverdag og gaming</li>
+        <li>eSIM som gir bedre fleksibilitet, forbedret brukervennlighet, økt sikkerhet og sømløs tilkobling</li>
+    </ul>
+</section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Mobilbutikk</p>
+</footer>
+
+<script>
+    function byttBilde(element) {
+        const hovedbilde = document.getElementById("aktiv-bilde");
+        hovedbilde.src = element.src;
+        hovedbilde.alt = element.alt;
+    }
+    </script>
+</body>
+</html>
